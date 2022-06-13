@@ -23,7 +23,7 @@ The network of proposed method as shown in modules.py.
 
 The network include 7 TE module, and a module include 2 CNN, Relu and Batchnormalization, input is added to the output of second BN as residual block. And the SE is added to the residual block as TE module.
 
-The parameter as shown in modulels.py.
+The parameter as shown in modules.py.
 
 
 
