@@ -19,6 +19,12 @@ The network of proposed method as shown in modules.py.
 
 [`train.py`](train.py) provides the code for training a model from scratch. 
 
+### About the netowrk
+
+The network include 7 TE module, and a module include 2 CNN, Relu and Batchnormalization, input is added to the output of second BN as residual block. And the SE is added to the residual block as TE module.
+
+The parameter as shown in models.py.
+
 
 
 
