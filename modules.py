@@ -51,7 +51,7 @@ class Residual(nn.Module):
 
 
 class tauRepresentationModule(nn.Module):
-    def __init__(self, signal_dim=50, n_filters=8, n_layers=3, inner_dim=125,
+    def __init__(self, signal_dim=50, n_filters=8, n_layers=7, inner_dim=125,
                  kernel_size=3, upsampling=8, kernel_out=25):
         super().__init__()
         self.tau_size = inner_dim * upsampling
