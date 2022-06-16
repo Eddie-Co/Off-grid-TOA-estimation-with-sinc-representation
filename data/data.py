@@ -48,7 +48,7 @@ def gen_signal(num_samples, signal_dim, num_tau, min_sep, snr):
                                 (tt[k] - tau[n, i] * 20 * 10e-8) ** 2)
             s[n, 0] = s[n, 0] + sin.real
             s[n, 1] = s[n, 1] + sin.imag
-        s[n, 0] = s[n, 0] + noisy(s[n, 0], snr)  #noise改变!!!!!
+        s[n, 0] = s[n, 0] + noisy(s[n, 0], snr) 
         s[n, 1] = s[n, 1] + noisy(s[n, 1], snr)
         s[n] = s[n] / np.sqrt(np.mean(np.power(s[n], 2)))
     tau.sort(axis=1)
