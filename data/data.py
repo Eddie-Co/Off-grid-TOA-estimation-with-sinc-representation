@@ -32,7 +32,7 @@ def noisy(s, snr):
 def gen_signal(num_samples, signal_dim, num_tau, min_sep, snr):
     np.random.seed(2)
     f0 = 300e4
-    k1 = 3e9
+    k1 = 1e9
     s = np.zeros((num_samples, 2, signal_dim))
     # 采样函数
     tt = np.linspace(-0.0025, 0.0025, 50)
